@@ -1,0 +1,187 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+:root {
+	--White: hsl(0, 0%, 100%);
+
+	--Stone100: hsl(30, 54%, 90%);
+	--Stone150: hsl(30, 18%, 87%);
+	--Stone600: hsl(30, 10%, 34%);
+	--Stone900: hsl(24, 5%, 18%);
+
+	--Brown800: hsl(14, 45%, 36%);
+	--Rose800: hsl(332, 51%, 32%);
+	--Rose50: hsl(330, 100%, 98%);
+}
+
+body {
+	font-family: "Outfit", "Young Serif", "sans-serif";
+	background-color: var(--Stone100);
+	line-height: 1.6;
+}
+
+ul, ol { 
+    padding-left: 20px;
+    line-height: 2;
+}
+
+ol li {
+	text-align: justify;
+	padding-left: 18px;
+}
+
+ol li::marker {
+  color: var(--Rose800);
+  font-weight: bold;
+}
+
+ul li {
+    text-indent: 15px; 
+}
+
+h2 {
+	font-family: "Young Serif";
+	color: var(--Rose800);
+	margin-bottom: 15px;
+}
+
+.container {
+	width: 100%;
+	max-width: 800px;
+	margin: 70px auto;
+	background-color: var(--White);
+	padding: 35px;
+	border: 1px solid var(--White);
+	border-radius: 10px;
+}
+
+.intro {
+	margin-bottom: 25px;
+}
+
+.intro img {
+	display: block;	
+	width: 100%;
+	height: auto;
+	margin-bottom: 25px;
+}
+
+.intro h1 {
+	font-family: "Young Serif";
+	font-size: 2rem;
+	margin-bottom: 25px;
+}
+
+.preparation {
+	background-color: var(--Rose50);
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 25px;
+}
+
+.preparation h3 {
+	color: var(--Rose800);
+	margin-bottom: 10px;
+}
+
+.ingredients {
+	margin-bottom: 25px;
+	border-bottom: 1px solid var(--Stone150);
+}
+
+.ingredients ul {
+	margin-bottom: 25px;
+}
+
+.instructions {
+	margin-bottom: 25px;
+	text-align: justify;
+	border-bottom: 1px solid var(--Stone150);
+}
+
+.instructions ol {
+	margin-bottom: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 85%;
+  margin-bottom: 25px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--Stone150);
+  color: var(--Rose800);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .preparation, .ingredients, .instructions {
+        padding: 15px;
+    }
+
+    ul, ol {
+        padding-left: 15px;
+    }
+
+    h2, h3 {
+        font-size: 1.25rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .intro h1 {
+        font-size: 1.2rem;
+    }
+
+    .intro img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .preparation, .ingredients, .instructions {
+        padding: 10px;
+    }
+
+    ul, ol {
+        padding-left: 10px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1200px;
+        padding: 40px;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .preparation, .ingredients, .instructions {
+        padding: 30px;
+    }
+
+    h2, h3 {
+        font-size: 1.75rem;
+    }
+}
