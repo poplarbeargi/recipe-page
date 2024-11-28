@@ -38,7 +38,7 @@ I start by assigning tags for the content inside the index.html first, doing so 
 
 ### What I learned
 
-There was nothing too major when I created this. I just tried my best using basic HTML and CSS knowledge. 
+There was nothing too major when I created this, but it helped me hone my basic CSS and HTML, especially Media Query.
 
 ## Author
 
