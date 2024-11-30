@@ -23,8 +23,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-([Solution](https://www.frontendmentor.io/solutions/recipe-page-using-basic-html-and-css-for-responsive-design-dYr-9iTb80))
-([Live Site](https://poplarbeargi.github.io/recipe-page/))
+-[Solution](https://www.frontendmentor.io/solutions/recipe-page-using-basic-html-and-css-for-responsive-design-dYr-9iTb80)
+-[Live Site](https://poplarbeargi.github.io/recipe-page/)
 
 ## My process
 I start by assigning tags for the content inside the index.html first, doing so helps me to familiarise myself with each section. After that, I began to tinker and style the page with the CSS file. Nothing too fancy, I don't use Flexbox or grid.
