@@ -23,7 +23,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: -
+- Solution URL: ([https://your-solution-url.com](https://www.frontendmentor.io/solutions/recipe-page-using-basic-html-and-css-for-responsive-design-dYr-9iTb80))
 - Live Site URL: -
 
 ## My process
