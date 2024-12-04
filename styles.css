@@ -21,6 +21,7 @@ body {
 	font-family: "Outfit", "Young Serif", "sans-serif";
 	background-color: var(--Stone100);
 	line-height: 1.6;
+    overflow-x: hidden;
 }
 
 ul, ol { 
@@ -64,7 +65,7 @@ h2 {
 
 .intro img {
 	display: block;	
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 	margin-bottom: 25px;
 }
@@ -121,9 +122,13 @@ th, td {
 
 @media (max-width: 768px) {
     .container {
-        padding: 20px;
+        margin: 0 auto;
+        width: 100%;
     }
-
+    .intro img {
+        max-width: 100%; 
+        height: auto;
+    }
     .intro h1 {
         font-size: 1.5rem;
     }
@@ -132,29 +137,71 @@ th, td {
         padding: 15px;
     }
 
-    ul, ol {
-        padding-left: 15px;
-    }
-
     h2, h3 {
         font-size: 1.25rem;
     }
+
+    ul, ol {
+        padding-left: 0px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+}
+
+footer {
+    text-align: center;
+    text-decoration: none;
+    margin: 2px;
+    font-size: 0.8rem;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s, font-size 0.3s;
+    font-size: 0.8rem;
+}
+
+footer a:hover {
+    font-size: 1rem;
+}
+
+footer a:visited {
+    color: var(--Rose800);
+}
+
+footer a:link {
+    color: var(--Brown800);
 }
 
 
 @media (max-width: 480px) {
     .container {
-        padding: 15px;
-        margin: 20px;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .intro h1 {
         font-size: 1.2rem;
     }
 
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    p, li, tr {
+        font-size: 0.8rem; 
+    }
+
     .intro img {
-        width: 100%;
-        margin-bottom: 15px;
+        max-width: 100%; 
+        height: auto;
     }
 
     .preparation, .ingredients, .instructions {
@@ -162,26 +209,10 @@ th, td {
     }
 
     ul, ol {
-        padding-left: 10px;
-    }
-}
-
-
-@media (min-width: 1440px) {
-    .container {
-        max-width: 1200px;
-        padding: 40px;
+        padding-left: 0px;
     }
 
-    .intro h1 {
-        font-size: 2.5rem;
-    }
-
-    .preparation, .ingredients, .instructions {
-        padding: 30px;
-    }
-
-    h2, h3 {
-        font-size: 1.75rem;
+    table {
+        width: 100%; 
     }
 }
